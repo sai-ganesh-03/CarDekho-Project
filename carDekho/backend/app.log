@@ -1,0 +1,494 @@
+2026-04-24 14:50:27 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:50:27 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:50:27 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-04-24 14:50:59 [INFO] main: session=c34c7f2f | user: petrol car under 5 lakhs
+2026-04-24 14:50:59 [INFO] agent: iter=0 | sleeping 10s before API call
+2026-04-24 14:51:09 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 14:51:09 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002159B3EE170>
+2026-04-24 14:51:09 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000002159B19B3C0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 14:51:09 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002159B3EE140>
+2026-04-24 14:51:09 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 14:51:09 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 14:51:09 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 14:51:09 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 14:51:09 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 14:51:12 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:21:12 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=2190'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 14:51:12 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 14:51:12 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 14:51:12 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 14:51:12 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 14:51:12 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 14:51:12 [INFO] agent: tool_call: get_schema | args: {}
+2026-04-24 14:51:12 [DEBUG] agent: tool_result: get_schema | TABLE: cardekho_dataset (15,411 rows)
+
+COLUMNS:
+  car_name         (TEXT)    - Full car name, e.g. "Maruti Alto", "Hyundai Grand"
+  brand            (TEXT)    - Manufacturer
+  model            (TEXT)    - Model name
+  vehicle_age      (INTEGER) - How old the car is in years (range: 0-29)
+           
+2026-04-24 14:51:12 [INFO] agent: iter=1 | sleeping 10s before API call
+2026-04-24 14:51:22 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:51:22 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:51:22 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 14:51:22 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002159B3EF160>
+2026-04-24 14:51:22 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000002159B19B3C0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 14:51:22 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002159B3EF100>
+2026-04-24 14:51:22 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 14:51:22 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 14:51:22 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 14:51:22 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 14:51:22 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 14:51:33 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:21:33 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=11538'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 14:51:33 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 14:51:33 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 14:51:33 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 14:51:33 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 14:51:33 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 14:51:33 [INFO] agent: tool_call: query_cars | args: {'sql': "SELECT car_name, brand, model, vehicle_age, km_driven, fuel_type, transmission_type, mileage, engine, seats, selling_price FROM cardekho_dataset WHERE fuel_type = 'Petrol' AND selling_price <
+2026-04-24 14:51:33 [DEBUG] agent: tool_result: query_cars | {"count": 10, "results": [{"car_name": "Maruti S-Presso", "brand": "Maruti", "model": "S-Presso", "vehicle_age": 0, "km_driven": 5000, "fuel_type": "Petrol", "transmission_type": "Manual", "mileage": 21.7, "engine": 998, "seats": 5, "selling_price": 500000}, {"car_name": "Mahindra KUV", "brand": "Ma
+2026-04-24 14:51:33 [INFO] agent: iter=2 | sleeping 10s before API call
+2026-04-24 14:51:44 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:51:44 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:51:44 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 14:51:44 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002159B3EFDF0>
+2026-04-24 14:51:44 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000002159B19B3C0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 14:51:44 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002159B3EFDC0>
+2026-04-24 14:51:44 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 14:51:44 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 14:51:44 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 14:51:44 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 14:51:44 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 14:52:27 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:22:27 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=43717'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 14:52:27 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 14:52:27 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 14:52:27 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 14:52:27 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 14:52:27 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 14:52:27 [DEBUG] agent: iter=2 | no tool calls — final answer
+2026-04-24 14:52:27 [DEBUG] agent: raw_response: [{'type': 'text', 'text': '{\n  "type": "cars",\n  "message": "Finding a solid petrol car under 5 lakhs is a smart move, especially for city commutes. I\'ve picked out some of the best options that are nearly new (just 0-1 year old). You\'ll find reliable workhorses like the Wagon R and S-Presso, which are famous for their low maintenance and great mileage.",\n  "cars": [\n    {\n      "car_name": "Maruti S-Presso",\n      "brand": "Maruti",\n      "model": "S-Presso",\n      "vehicle_age": 0,\n
+2026-04-24 14:52:27 [ERROR] main: session=c34c7f2f | chat() failed
+Traceback (most recent call last):
+  File "C:\carDekho\backend\main.py", line 35, in chat_endpoint
+    result = chat(req.session_id, req.message)
+  File "C:\carDekho\backend\agent.py", line 186, in chat
+    return _parse_response(raw or "")
+  File "C:\carDekho\backend\agent.py", line 125, in _parse_response
+    content = re.sub(r"^```(?:json)?\s*", "", content.strip())
+AttributeError: 'list' object has no attribute 'strip'
+
+2026-04-24 14:53:38 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:53:38 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:53:38 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-04-24 14:53:55 [INFO] main: session=ffe5c5d4 | user: petrol car under 5 lakhs
+2026-04-24 14:53:55 [INFO] agent: iter=0 | sleeping 10s before API call
+2026-04-24 14:54:05 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 14:54:05 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BE260>
+2026-04-24 14:54:05 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD39F3C0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 14:54:05 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BE230>
+2026-04-24 14:54:05 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 14:54:05 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 14:54:05 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 14:54:05 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 14:54:05 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 14:54:24 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:24:24 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=19090'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 14:54:24 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 14:54:24 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 14:54:24 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 14:54:24 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 14:54:24 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 14:54:24 [INFO] agent: tool_call: get_schema | args: {}
+2026-04-24 14:54:24 [DEBUG] agent: tool_result: get_schema | TABLE: cardekho_dataset (15,411 rows)
+
+COLUMNS:
+  car_name         (TEXT)    - Full car name, e.g. "Maruti Alto", "Hyundai Grand"
+  brand            (TEXT)    - Manufacturer
+  model            (TEXT)    - Model name
+  vehicle_age      (INTEGER) - How old the car is in years (range: 0-29)
+           
+2026-04-24 14:54:24 [INFO] agent: iter=1 | sleeping 10s before API call
+2026-04-24 14:54:34 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:54:34 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:54:34 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 14:54:34 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BF250>
+2026-04-24 14:54:34 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD39F3C0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 14:54:34 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BF1F0>
+2026-04-24 14:54:34 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 14:54:34 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 14:54:34 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 14:54:34 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 14:54:34 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 14:54:36 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:24:36 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=1993'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 14:54:36 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 14:54:36 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 14:54:36 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 14:54:36 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 14:54:36 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 14:54:36 [INFO] agent: tool_call: query_cars | args: {'sql': "SELECT car_name, brand, model, vehicle_age, km_driven, fuel_type, transmission_type, mileage, engine, seats, selling_price\nFROM cardekho_dataset\nWHERE fuel_type = 'Petrol' AND selling_price
+2026-04-24 14:54:36 [DEBUG] agent: tool_result: query_cars | {"count": 10, "results": [{"car_name": "Ford Aspire", "brand": "Ford", "model": "Aspire", "vehicle_age": 4, "km_driven": 58000, "fuel_type": "Petrol", "transmission_type": "Manual", "mileage": 18.16, "engine": 1196, "seats": 5, "selling_price": 500000}, {"car_name": "Hyundai i20", "brand": "Hyundai"
+2026-04-24 14:54:36 [INFO] agent: iter=2 | sleeping 10s before API call
+2026-04-24 14:54:46 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:54:46 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:54:46 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 14:54:46 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD628040>
+2026-04-24 14:54:46 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD39F3C0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 14:54:46 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BFEB0>
+2026-04-24 14:54:46 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 14:54:46 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 14:54:46 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 14:54:46 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 14:54:46 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 14:55:14 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:25:14 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=27112'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 14:55:14 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 14:55:14 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 14:55:14 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 14:55:14 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 14:55:14 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 14:55:14 [DEBUG] agent: iter=2 | no tool calls — final answer
+2026-04-24 14:55:14 [DEBUG] agent: raw_response: {
+  "type": "cars",
+  "message": "Finding a reliable petrol car under 5 lakhs is a smart move. I've picked out some excellent options like the Maruti Wagon R for its great mileage and the Hyundai i20 if you want a bit more premium feel. These are all relatively new (under 10 years) and perfect for city driving.",
+  "cars": [
+    {
+      "brand": "Ford",
+      "car_name": "Ford Aspire",
+      "engine": 1196,
+      "fuel_type": "Petrol",
+      "km_driven": 58000,
+      "mileage": 18.16,
+      "mod
+2026-04-24 14:55:14 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:55:14 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:55:14 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-04-24 14:55:14 [INFO] main: session=ffe5c5d4 | agent type=cars | msg=Finding a reliable petrol car under 5 lakhs is a smart move. I've picked out some excellent options like the Maruti Wago
+2026-04-24 14:56:05 [INFO] main: session=ffe5c5d4 | user: i want bmw
+2026-04-24 14:56:05 [INFO] agent: iter=0 | sleeping 10s before API call
+2026-04-24 14:56:15 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 14:56:15 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BE4D0>
+2026-04-24 14:56:15 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD54D440> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 14:56:15 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BECB0>
+2026-04-24 14:56:15 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 14:56:15 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 14:56:15 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 14:56:15 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 14:56:15 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 14:56:36 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:26:36 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=21461'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 14:56:36 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 14:56:36 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 14:56:36 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 14:56:36 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 14:56:36 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 14:56:36 [INFO] agent: tool_call: query_cars | args: {'sql': "SELECT car_name, brand, model, vehicle_age, km_driven, fuel_type, transmission_type, mileage, engine, seats, selling_price\nFROM cardekho_dataset\nWHERE brand = 'BMW'\nORDER BY selling_price 
+2026-04-24 14:56:36 [DEBUG] agent: tool_result: query_cars | {"count": 10, "results": [{"car_name": "BMW 7", "brand": "BMW", "model": "7", "vehicle_age": 14, "km_driven": 60000, "fuel_type": "Diesel", "transmission_type": "Automatic", "mileage": 14.49, "engine": 2993, "seats": 5, "selling_price": 465000}, {"car_name": "BMW 5", "brand": "BMW", "model": "5", "v
+2026-04-24 14:56:36 [INFO] agent: iter=1 | sleeping 10s before API call
+2026-04-24 14:56:47 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:56:47 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:56:47 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 14:56:47 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD57CBE0>
+2026-04-24 14:56:47 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD54D440> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 14:56:47 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD57CC10>
+2026-04-24 14:56:47 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 14:56:47 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 14:56:47 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 14:56:47 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 14:56:47 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 14:57:05 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:27:05 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=18236'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 14:57:05 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 14:57:05 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 14:57:05 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 14:57:05 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 14:57:05 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 14:57:05 [DEBUG] agent: iter=1 | no tool calls — final answer
+2026-04-24 14:57:05 [DEBUG] agent: raw_response: {
+  "type": "cars",
+  "message": "A BMW at this price point is tempting, but as an advisor, I must give you a heads-up: these are older luxury cars (10-14 years old). While the badge is prestigious, maintenance and spare parts for an old BMW can be very expensive. If you're okay with that, here are the most affordable ones I found, including a 7 Series and a few 3 Series models.",
+  "cars": [
+    {
+      "brand": "BMW",
+      "car_name": "BMW 7",
+      "engine": 2993,
+      "fuel_type": "Diesel"
+2026-04-24 14:57:05 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:57:05 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:57:05 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-04-24 14:57:05 [INFO] main: session=ffe5c5d4 | agent type=cars | msg=A BMW at this price point is tempting, but as an advisor, I must give you a heads-up: these are older luxury cars (10-14
+2026-04-24 14:57:55 [INFO] main: session=ffe5c5d4 | user: i said petrol
+2026-04-24 14:57:55 [INFO] agent: iter=0 | sleeping 10s before API call
+2026-04-24 14:58:05 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 14:58:05 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BDB10>
+2026-04-24 14:58:05 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD39F3C0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 14:58:05 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BEBF0>
+2026-04-24 14:58:05 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 14:58:05 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 14:58:05 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 14:58:05 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 14:58:05 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 14:58:08 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:28:08 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=3126'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 14:58:08 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 14:58:08 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 14:58:08 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 14:58:08 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 14:58:08 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 14:58:08 [INFO] agent: tool_call: query_cars | args: {'sql': "SELECT car_name, brand, model, vehicle_age, km_driven, fuel_type, transmission_type, mileage, engine, seats, selling_price\nFROM cardekho_dataset\nWHERE brand = 'BMW' AND fuel_type = 'Petrol'
+2026-04-24 14:58:08 [DEBUG] agent: tool_result: query_cars | {"count": 10, "results": [{"car_name": "BMW 5", "brand": "BMW", "model": "5", "vehicle_age": 13, "km_driven": 59869, "fuel_type": "Petrol", "transmission_type": "Automatic", "mileage": 10.6, "engine": 2996, "seats": 5, "selling_price": 550000}, {"car_name": "BMW 3", "brand": "BMW", "model": "3", "ve
+2026-04-24 14:58:08 [INFO] agent: iter=1 | sleeping 10s before API call
+2026-04-24 14:58:18 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:58:18 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:58:18 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 14:58:18 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BE6E0>
+2026-04-24 14:58:18 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD39F3C0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 14:58:18 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BF8E0>
+2026-04-24 14:58:18 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 14:58:18 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 14:58:18 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 14:58:18 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 14:58:18 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 14:58:33 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:28:33 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=14314'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 14:58:33 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 14:58:33 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 14:58:33 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 14:58:33 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 14:58:33 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 14:58:33 [DEBUG] agent: iter=1 | no tool calls — final answer
+2026-04-24 14:58:33 [DEBUG] agent: raw_response: {
+  "type": "cars",
+  "message": "Understood, you're looking for a Petrol BMW. Finding one under 5 lakhs is very difficult, but I've found the closest options starting around 5.5 lakhs. These are older models, so do keep in mind that fuel efficiency will be low and maintenance will be a significant cost.",
+  "cars": [
+    {
+      "brand": "BMW",
+      "car_name": "BMW 5",
+      "engine": 2996,
+      "fuel_type": "Petrol",
+      "km_driven": 59869,
+      "mileage": 10.6,
+      "model": "5",
+     
+2026-04-24 14:58:33 [DEBUG] httpcore.connection: close.started
+2026-04-24 14:58:33 [DEBUG] httpcore.connection: close.complete
+2026-04-24 14:58:33 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-04-24 14:58:33 [INFO] main: session=ffe5c5d4 | agent type=cars | msg=Understood, you're looking for a Petrol BMW. Finding one under 5 lakhs is very difficult, but I've found the closest opt
+2026-04-24 15:00:33 [INFO] main: session=d2530f7e | user: i want a nice car for daily office travel
+2026-04-24 15:00:33 [INFO] agent: iter=0 | sleeping 10s before API call
+2026-04-24 15:00:43 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 15:00:43 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BFA60>
+2026-04-24 15:00:43 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD2D16C0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 15:00:43 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BDE40>
+2026-04-24 15:00:43 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 15:00:43 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 15:00:43 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 15:00:43 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 15:00:43 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 15:01:01 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:31:01 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=18361'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 15:01:01 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 15:01:01 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 15:01:01 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 15:01:01 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 15:01:01 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 15:01:01 [INFO] agent: tool_call: get_schema | args: {}
+2026-04-24 15:01:01 [DEBUG] agent: tool_result: get_schema | TABLE: cardekho_dataset (15,411 rows)
+
+COLUMNS:
+  car_name         (TEXT)    - Full car name, e.g. "Maruti Alto", "Hyundai Grand"
+  brand            (TEXT)    - Manufacturer
+  model            (TEXT)    - Model name
+  vehicle_age      (INTEGER) - How old the car is in years (range: 0-29)
+           
+2026-04-24 15:01:01 [INFO] agent: iter=1 | sleeping 10s before API call
+2026-04-24 15:01:11 [DEBUG] httpcore.connection: close.started
+2026-04-24 15:01:11 [DEBUG] httpcore.connection: close.complete
+2026-04-24 15:01:11 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 15:01:11 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD654190>
+2026-04-24 15:01:11 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD2D16C0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 15:01:11 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD654160>
+2026-04-24 15:01:11 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 15:01:11 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 15:01:11 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 15:01:11 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 15:01:11 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 15:01:35 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:31:34 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=23119'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 15:01:35 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 15:01:35 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 15:01:35 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 15:01:35 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 15:01:35 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 15:01:35 [DEBUG] agent: iter=1 | no tool calls — final answer
+2026-04-24 15:01:35 [DEBUG] agent: raw_response: {"type": "question", "message": "I can definitely help you find a reliable ride for your office runs, but to give you the best options, what's the budget range you're looking at in lakhs?"}
+2026-04-24 15:01:35 [DEBUG] httpcore.connection: close.started
+2026-04-24 15:01:35 [DEBUG] httpcore.connection: close.complete
+2026-04-24 15:01:35 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-04-24 15:01:35 [INFO] main: session=d2530f7e | agent type=question | msg=I can definitely help you find a reliable ride for your office runs, but to give you the best options, what's the budget
+2026-04-24 15:01:53 [INFO] main: session=d2530f7e | user: 20 lakhs
+2026-04-24 15:01:54 [INFO] agent: iter=0 | sleeping 10s before API call
+2026-04-24 15:02:04 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 15:02:04 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BE500>
+2026-04-24 15:02:04 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD5D8CC0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 15:02:04 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BFD00>
+2026-04-24 15:02:04 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 15:02:04 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 15:02:04 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 15:02:04 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 15:02:04 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 15:02:27 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:32:27 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=22815'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 15:02:27 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 15:02:27 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 15:02:27 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 15:02:27 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 15:02:27 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 15:02:27 [INFO] agent: tool_call: query_cars | args: {'sql': "SELECT car_name, brand, model, vehicle_age, km_driven, fuel_type, transmission_type, mileage, engine, seats, selling_price\nFROM cardekho_dataset\nWHERE selling_price BETWEEN 1000000 AND 2000
+2026-04-24 15:02:27 [DEBUG] agent: tool_result: query_cars | {"count": 10, "results": [{"car_name": "Honda Civic", "brand": "Honda", "model": "Civic", "vehicle_age": 2, "km_driven": 11000, "fuel_type": "Petrol", "transmission_type": "Automatic", "mileage": 16.5, "engine": 1799, "seats": 5, "selling_price": 2000000}, {"car_name": "BMW X1", "brand": "BMW", "mod
+2026-04-24 15:02:27 [INFO] agent: iter=1 | sleeping 10s before API call
+2026-04-24 15:02:37 [DEBUG] httpcore.connection: close.started
+2026-04-24 15:02:37 [DEBUG] httpcore.connection: close.complete
+2026-04-24 15:02:37 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 15:02:37 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD654310>
+2026-04-24 15:02:37 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD5D8CC0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 15:02:37 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD6542E0>
+2026-04-24 15:02:37 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 15:02:37 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 15:02:37 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 15:02:37 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 15:02:37 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 15:02:49 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 503, b'Service Unavailable', [(b'X-Gemini-Service-Tier', b'standard'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:32:49 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=12661'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 15:02:49 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-24 15:02:49 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 15:02:49 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 15:02:49 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 15:02:49 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 15:02:49 [INFO] google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._request_once in 1.13 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-04-24 15:02:50 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 15:02:50 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 15:02:50 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 15:02:50 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 15:02:50 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 15:03:23 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:33:23 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=32424'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 15:03:23 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 15:03:23 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 15:03:23 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 15:03:23 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 15:03:23 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 15:03:23 [INFO] agent: tool_call: query_cars | args: {'sql': "SELECT car_name, brand, model, vehicle_age, km_driven, fuel_type, transmission_type, mileage, engine, seats, selling_price\nFROM cardekho_dataset\nWHERE selling_price BETWEEN 1000000 AND 2000
+2026-04-24 15:03:23 [DEBUG] agent: tool_result: query_cars | {"count": 10, "results": [{"car_name": "Kia Seltos", "brand": "Kia", "model": "Seltos", "vehicle_age": 1, "km_driven": 3500, "fuel_type": "Petrol", "transmission_type": "Automatic", "mileage": 16.8, "engine": 1497, "seats": 5, "selling_price": 1490000}, {"car_name": "Hyundai Verna", "brand": "Hyunda
+2026-04-24 15:03:23 [INFO] agent: iter=2 | sleeping 10s before API call
+2026-04-24 15:03:33 [DEBUG] httpcore.connection: close.started
+2026-04-24 15:03:33 [DEBUG] httpcore.connection: close.complete
+2026-04-24 15:03:33 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 15:03:33 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BFD60>
+2026-04-24 15:03:33 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD5D8CC0> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 15:03:33 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BEAA0>
+2026-04-24 15:03:33 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 15:03:33 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 15:03:33 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 15:03:33 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 15:03:33 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 15:04:11 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:34:11 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=37553'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 15:04:11 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 15:04:11 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 15:04:11 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 15:04:11 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 15:04:11 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 15:04:11 [DEBUG] agent: iter=2 | no tool calls — final answer
+2026-04-24 15:04:11 [DEBUG] agent: raw_response: {
+  "type": "cars",
+  "message": "With a 20 lakh budget, you can get some seriously 'nice' rides that make daily traffic feel like a breeze. I've picked out some top-tier automatics—like the Honda City for pure comfort, the Kia Seltos for tech and style, and the MG Hector if you want that premium 'big car' feel. These are all nearly new with very low mileage!",
+  "cars": [
+    {
+      "brand": "Kia",
+      "car_name": "Kia Seltos",
+      "engine": 1497,
+      "fuel_type": "Petrol",
+      "km_dri
+2026-04-24 15:04:11 [DEBUG] httpcore.connection: close.started
+2026-04-24 15:04:11 [DEBUG] httpcore.connection: close.complete
+2026-04-24 15:04:11 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-04-24 15:04:11 [INFO] main: session=d2530f7e | agent type=cars | msg=With a 20 lakh budget, you can get some seriously 'nice' rides that make daily traffic feel like a breeze. I've picked o
+2026-04-24 15:04:54 [INFO] main: session=d2530f7e | user: i want higher milage
+2026-04-24 15:04:55 [INFO] agent: iter=0 | sleeping 10s before API call
+2026-04-24 15:05:05 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 15:05:05 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BE500>
+2026-04-24 15:05:05 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD5D8B40> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 15:05:05 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BFC40>
+2026-04-24 15:05:05 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 15:05:05 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 15:05:05 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 15:05:05 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 15:05:05 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 15:05:18 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:35:18 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=13086'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 15:05:18 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 15:05:18 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 15:05:18 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 15:05:18 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 15:05:18 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 15:05:18 [INFO] agent: tool_call: query_cars | args: {'sql': 'SELECT car_name, brand, model, vehicle_age, km_driven, fuel_type, transmission_type, mileage, engine, seats, selling_price\nFROM cardekho_dataset\nWHERE selling_price <= 2000000\n  AND mileag
+2026-04-24 15:05:18 [DEBUG] agent: tool_result: query_cars | {"count": 10, "results": [{"car_name": "Maruti Wagon R", "brand": "Maruti", "model": "Wagon R", "vehicle_age": 3, "km_driven": 52000, "fuel_type": "CNG", "transmission_type": "Manual", "mileage": 33.54, "engine": 998, "seats": 5, "selling_price": 435000}, {"car_name": "Maruti Wagon R", "brand": "Mar
+2026-04-24 15:05:18 [INFO] agent: iter=1 | sleeping 10s before API call
+2026-04-24 15:05:28 [DEBUG] httpcore.connection: close.started
+2026-04-24 15:05:28 [DEBUG] httpcore.connection: close.complete
+2026-04-24 15:05:28 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 15:05:28 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD660400>
+2026-04-24 15:05:28 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD5D8B40> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 15:05:28 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD6603D0>
+2026-04-24 15:05:28 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 15:05:28 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 15:05:28 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 15:05:28 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 15:05:28 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 15:05:31 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:35:31 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=3259'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 15:05:31 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 15:05:31 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 15:05:31 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 15:05:31 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 15:05:31 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 15:05:31 [INFO] agent: tool_call: query_cars | args: {'sql': 'SELECT car_name, brand, model, vehicle_age, km_driven, fuel_type, transmission_type, mileage, engine, seats, selling_price\nFROM cardekho_dataset\nWHERE selling_price BETWEEN 600000 AND 20000
+2026-04-24 15:05:31 [DEBUG] agent: tool_result: query_cars | {"count": 10, "results": [{"car_name": "Maruti Swift Dzire", "brand": "Maruti", "model": "Swift Dzire", "vehicle_age": 2, "km_driven": 22000, "fuel_type": "Diesel", "transmission_type": "Manual", "mileage": 28.4, "engine": 1248, "seats": 5, "selling_price": 925000}, {"car_name": "Maruti Swift Dzire"
+2026-04-24 15:05:31 [INFO] agent: iter=2 | sleeping 10s before API call
+2026-04-24 15:05:41 [DEBUG] httpcore.connection: close.started
+2026-04-24 15:05:41 [DEBUG] httpcore.connection: close.complete
+2026-04-24 15:05:41 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 15:05:41 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BDBD0>
+2026-04-24 15:05:41 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD5D8B40> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 15:05:41 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD5BFD60>
+2026-04-24 15:05:41 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 15:05:41 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 15:05:41 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 15:05:41 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 15:05:41 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 15:05:44 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:35:44 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=2929'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 15:05:44 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 15:05:44 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 15:05:44 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 15:05:44 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 15:05:44 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 15:05:44 [INFO] agent: tool_call: query_cars | args: {'sql': 'SELECT car_name, brand, model, vehicle_age, km_driven, fuel_type, transmission_type, mileage, engine, seats, selling_price\nFROM cardekho_dataset\nWHERE selling_price BETWEEN 1000000 AND 2000
+2026-04-24 15:05:44 [DEBUG] agent: tool_result: query_cars | {"count": 10, "results": [{"car_name": "Maruti Ciaz", "brand": "Maruti", "model": "Ciaz", "vehicle_age": 2, "km_driven": 15260, "fuel_type": "Diesel", "transmission_type": "Manual", "mileage": 28.09, "engine": 1248, "seats": 5, "selling_price": 1095000}, {"car_name": "Maruti Ciaz", "brand": "Maruti"
+2026-04-24 15:05:44 [INFO] agent: iter=3 | sleeping 10s before API call
+2026-04-24 15:05:54 [DEBUG] httpcore.connection: close.started
+2026-04-24 15:05:54 [DEBUG] httpcore.connection: close.complete
+2026-04-24 15:05:54 [DEBUG] httpcore.connection: connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+2026-04-24 15:05:54 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD6615D0>
+2026-04-24 15:05:54 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AEBD5D8B40> server_hostname='generativelanguage.googleapis.com' timeout=None
+2026-04-24 15:05:54 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AEBD6615A0>
+2026-04-24 15:05:55 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-04-24 15:05:55 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-04-24 15:05:55 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-04-24 15:05:55 [DEBUG] httpcore.http11: send_request_body.complete
+2026-04-24 15:05:55 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-04-24 15:05:59 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'X-Gemini-Service-Tier', b'standard'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Fri, 24 Apr 2026 09:35:59 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=4293'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-04-24 15:05:59 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-24 15:05:59 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-04-24 15:05:59 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-04-24 15:05:59 [DEBUG] httpcore.http11: response_closed.started
+2026-04-24 15:05:59 [DEBUG] httpcore.http11: response_closed.complete
+2026-04-24 15:05:59 [DEBUG] agent: iter=3 | no tool calls — final answer
+2026-04-24 15:05:59 [DEBUG] agent: raw_response: {
+  "type": "cars",
+  "message": "If mileage is your top priority for that daily office commute, these are the absolute champions. I've found some premium sedans like the Honda City and Maruti Ciaz that give you 25-28 km/l while still offering a 'nice' cabin and great road presence. These are mostly diesel manuals, which are the gold standard for high efficiency in India.",
+  "cars": [
+    {
+      "brand": "Maruti",
+      "car_name": "Maruti Ciaz",
+      "engine": 1248,
+      "fuel_type": "Diese
+2026-04-24 15:05:59 [DEBUG] httpcore.connection: close.started
+2026-04-24 15:05:59 [DEBUG] httpcore.connection: close.complete
+2026-04-24 15:05:59 [DEBUG] asyncio: Using proactor: IocpProactor
+2026-04-24 15:05:59 [INFO] main: session=d2530f7e | agent type=cars | msg=If mileage is your top priority for that daily office commute, these are the absolute champions. I've found some premium
