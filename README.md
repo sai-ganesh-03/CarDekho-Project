@@ -1,6 +1,6 @@
 # CarDekho AI Advisor
 
-> **Note for reviewers:** Every API call has a deliberate 10-second delay due to Gemini free-tier rate limits — responses will feel slow, this is expected. Also, the first ~20 minutes of the demo recording was lost due to a system crash.
+> **Note for reviewers:** Every API call has a deliberate 10-second delay due to Gemini free-tier rate limits, responses will feel slow, this is expected. It also has a limit of 20 API calls per day. Also, the first ~20 minutes of the demo recording was lost due to a system crash.
 
 A conversational car research tool that takes a buyer from "I don't know what to buy" to a confident shortlist — entirely through natural language.
 
